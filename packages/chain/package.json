@@ -21,6 +21,14 @@
     "test": "jest",
     "clean": "npx rimraf node_modules dist"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./dist/resolver": "./dist/resolver/index.js",
+    "./dist/*": "./dist/*.js"
+  },
   "dependencies": {
     "@openibex/core": "^0.1.0",
     "@orbitdb/core": "^2.2.0",

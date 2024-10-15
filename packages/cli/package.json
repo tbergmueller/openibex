@@ -25,6 +25,12 @@
   "bin": {
     "oi": "./dist/index.js"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "dependencies": {
     "@openibex/core": "^0.1.0",
     "@openibex/chain": "^0.1.0",
