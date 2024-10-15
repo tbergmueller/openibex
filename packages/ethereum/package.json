@@ -1,13 +1,16 @@
 {
   "name": "@openibex/ethereum",
   "version": "0.1.0",
-  "repository": "https://code.ibex.host/ibex-open/core.git",
+  "repository": "https://github.com/openibex/openibex/",
   "bugs": {
-    "url": "https://code.ibex.host/ibex-open/core/issues"
+    "url": "https://github.com/openibex/openibex/issues"
   },
   "author": "Ibex Labs <office@ibex.host>",
   "license": "MIT",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -16,11 +19,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "clean": "npx rimraf node_modules dist",
-    "oi": "tsx --watch index.ts"
-  },
-  "bin": {
-    "oi": "./dist/index.js"
+    "clean": "npx rimraf node_modules dist"
   },
   "dependencies": {
     "@openibex/core": "^0.1.0",
